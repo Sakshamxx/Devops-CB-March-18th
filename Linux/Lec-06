@@ -1,0 +1,281 @@
+Test 1 : (30 mins)
+
+MCQs (50 Questions)
+Who becomes the owner of a file when it is created?
+ A. root
+ B. system
+ C. user who created it
+ D. admin
+Which command is used to change file ownership?
+ A. chmod
+ B. chown
+ C. change
+ D. own
+What does chmod stand for?
+ A. change module
+ B. change mode
+ C. check mode
+ D. create mode
+What does permission 7 represent?
+ A. read only
+ B. write only
+ C. read, write, execute
+ D. execute only
+What does permission 5 represent?
+ A. read and execute
+ B. write and execute
+ C. read and write
+ D. execute only
+Which command shows file permissions?
+ A. ls
+ B. ls -l
+ C. pwd
+ D. who
+What is the owner field in ls -l output?
+ A. first column
+ B. second column
+ C. third column
+ D. fourth column
+What does “r” mean in permissions?
+ A. run
+ B. read
+ C. root
+ D. reset
+What does “w” mean?
+ A. write
+ B. watch
+ C. work
+ D. window
+What does “x” mean?
+ A. execute
+ B. exit
+ C. expand
+ D. extract
+What does chmod 777 do?
+ A. no access
+ B. full access to all
+ C. read only
+ D. execute only
+Which permission is safest for scripts?
+ A. 777
+ B. 755
+ C. 666
+ D. 700
+What is the default owner of a file created using sudo?
+ A. user
+ B. admin
+ C. root
+ D. group
+Which command adds a user?
+ A. add
+ B. useradd
+ C. createuser
+ D. newuser
+Which command creates a group?
+ A. groupadd
+ B. addgroup
+ C. newgroup
+ D. makegroup
+What does chown user:group file mean?
+ A. change permission
+ B. change owner and group
+ C. delete group
+ D. rename file
+What is the group in file permissions?
+ A. owner’s team
+ B. system users
+ C. all users
+ D. root only
+What does “others” refer to?
+ A. admins
+ B. users not owner/group
+ C. root
+ D. system
+Which command checks current user?
+ A. who
+ B. whoami
+ C. user
+ D. id
+What is UID?
+ A. user identifier
+ B. unique id
+ C. user id
+ D. both B and C
+Which command changes permissions symbolically?
+ A. chmod u+r
+ B. chown
+ C. usermod
+ D. setperm
+What does chmod 644 mean?
+ A. owner full, others read
+ B. all full
+ C. none access
+ D. execute only
+What is execute permission required for?
+ A. reading file
+ B. modifying file
+ C. running script
+ D. deleting file
+Which user has highest privileges?
+ A. guest
+ B. user
+ C. root
+ D. group
+What happens if no execute permission on script?
+ A. runs normally
+ B. fails to execute
+ C. deletes file
+ D. restarts system
+What does -R flag in chown do?
+ A. read
+ B. recursive
+ C. remove
+ D. reset
+Which command changes group of file?
+ A. chgrp
+ B. chmod
+ C. chown
+ D. groupmod
+What is default group of a new file?
+ A. root
+ B. user’s primary group
+ C. system
+ D. admin
+Which command lists groups of a user?
+ A. groups
+ B. listgrp
+ C. showgrp
+ D. who
+What is setgid used for?
+ A. set owner
+ B. enforce group inheritance
+ C. delete group
+ D. rename group
+Which permission allows editing file?
+ A. read
+ B. write
+ C. execute
+ D. none
+What does chmod 700 mean?
+ A. full for all
+ B. full for owner only
+ C. read only
+ D. execute only
+Which command switches user?
+ A. su
+ B. switch
+ C. user
+ D. login
+What does sudo do?
+ A. delete file
+ B. run as root
+ C. create user
+ D. show user
+Which file stores user info?
+ A. /etc/users
+ B. /etc/passwd
+ C. /etc/group
+ D. /home
+Which file stores group info?
+ A. /etc/passwd
+ B. /etc/group
+ C. /etc/users
+ D. /root
+What is the first column in ls -l?
+ A. owner
+ B. permissions
+ C. group
+ D. size
+What does “-” at start of permission mean?
+ A. directory
+ B. file
+ C. link
+ D. system
+What does “d” mean in permissions?
+ A. device
+ B. directory
+ C. data
+ D. disk
+Which permission is required to delete file?
+ A. read
+ B. write on directory
+ C. execute
+ D. none
+What happens if wrong ownership in app directory?
+ A. faster performance
+ B. permission errors
+ C. no change
+ D. system crash
+Which user runs nginx typically?
+ A. root
+ B. nginx
+ C. www-data
+ D. admin
+What does chmod u+x do?
+ A. remove execute
+ B. add execute to owner
+ C. add read
+ D. remove write
+Which command shows file owner?
+ A. ls
+ B. ls -l
+ C. who
+ D. pwd
+What is group used for?
+ A. storage
+ B. sharing access
+ C. deleting files
+ D. booting
+Which is more secure?
+ A. 777
+ B. 755
+ C. 666
+ D. 777 with root
+What does chmod o-r mean?
+ A. remove read from others
+ B. add read
+ C. remove write
+ D. none
+Which command modifies user groups?
+ A. usermod
+ B. chmod
+ C. chown
+ D. add
+What is principle of least privilege?
+ A. max access
+ B. minimum required access
+ C. no access
+ D. root access
+Which scenario causes permission denied?
+ A. correct owner
+ B. wrong permissions
+ C. correct group
+ D. correct UID
+
+ASSIGNMENT 
+
+Title: Secure Multi-User Project Setup
+Objective:
+ Design a secure Linux environment for a team working on a shared project.
+Scenario:
+You are a DevOps engineer managing a shared server where multiple developers collaborate. You must ensure proper ownership, permissions, and security.
+Tasks:
+Create three users: dev1, dev2, dev3
+Create a group named projectteam
+Add all users to the group
+Create a directory /project
+Assign ownership of the directory appropriately
+Ensure that all files created inside /project inherit the same group
+Create a script file inside the directory
+Set permissions such that:
+Only the owner can modify the file
+Group members can read and execute
+Others have no access
+Test access by switching between users
+Simulate a permission error and resolve it
+Questions:
+How is ownership determined when files are created?
+Why is group-based access control important?
+What problems can occur with incorrect permissions?
+How can you ensure group inheritance in directories?
+What security risks arise from overly permissive access?
